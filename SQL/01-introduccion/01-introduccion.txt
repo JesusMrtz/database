@@ -1,0 +1,39 @@
+¿Qué es SQL?
+    - Structured Query Lenguage: Lenguaje estructurado de consultas inventado por IBM.
+    - Es un lenguaje que se relaciona con las bases de datos relacionales
+
+Grupos de comandos:
+    - DDL (Data definition lenguage). Se encargan de crear y modificar la estructura de la base de datos
+        - CREATE
+        - ALTER 
+        - DROP 
+        - TRUNCATE
+
+    - DML (Data manipulation lenguage). Consultar, insertar, actualizar, borrar registros
+        - SELECT 
+        - INSERT 
+        - UPDATE
+        - DELETE
+
+    - DCL (Data control lenguage). Propociona seguridad en la base de datos 
+        - GRANT 
+        - REVOKE
+
+    - TCL (Transaction control language). Se utiliza para la gestion de cambios en los datos
+        - COMMIT 
+        - ROLLBACK
+        - SAVEPOINT
+
+
+Clausulas
+    - FROM 
+    - WHERE 
+    - GROUP BY 
+    - HAVING 
+    - ORDER BY
+
+
+Una instruccion SQL 
+    comando + clausula + operadores + funciones
+    Obligatorio son el comando y la clausula
+    SELECT * FROM clientes 

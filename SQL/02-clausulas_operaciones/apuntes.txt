@@ -1,0 +1,30 @@
+Clausulas
+    - FROM. Especifica la tabla de la que se quiere obtener los registros 
+    - WHERE. Especifica los criterios y las condiciones de los registros seleccionados
+    - GROUP BY. Para agrupar los registros seleccionados en función de un campo 
+    - HAVING. Especifica las condiciones o criterios que deben cumplir los grupos 
+    - ORDER BY. Ordena los registros seleccionados en función de un campo 
+
+
+Operadores de comparación 
+    - >
+    - <
+    - >=
+    - <=
+    - =
+    - <>
+    - BETWEEN. Entre. Utiliado para especificar rangos de valores
+    - LIKE. Como. Utilizado con caracteres de comodin (* ?)
+    - In. En. Para especificar registros en un campo en concreto
+
+
+Operadores lógico 
+    - AND 
+    - OR 
+    - NOT
+
+Orden descrita 
+    - comando + clausula from + clausula where + clausula group by + clausula having + clausula order by
+
+    SELECT * FROM productos WHERE fecha BETWEEN '2000-03-01' AND '2000-04-01';
+    SELECT * FROM productos WHERE fecha >= '2000-03-01' AND fecha <= '2000-04-01';

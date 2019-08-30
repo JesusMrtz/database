@@ -1,0 +1,7 @@
+* Inner join 
+    - De las tablas relacionadas entre si, nos refleja la información común que hay en ambas tablas 
+
+Consultar que clientes QUE han pedido de madrid
+    - SELECT * FROM CLIENTES INNER JOIN PEDIDOS ON CLIENTES.CODIGOCLIENTE = PEDIDOS.CODIGOCLIENTE WHERE POBLACION = 'MADRID';
+
+    

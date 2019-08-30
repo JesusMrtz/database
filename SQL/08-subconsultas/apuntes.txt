@@ -1,0 +1,11 @@
+Tipos de subconsultas:
+    
+    - Escalonada: 
+        - Mostrar el nombre del producto y la sección de aquellos articulos cuyo precio sea superior a la media 
+
+            - SELECT NOMBRE, SECCION FROM PRODUCTOS WHERE PRECIO > (SELECT AVG(PRECIO)  FROM PRODUCTOS)
+
+    
+    - De lista:
+        - Consulta que nos devuelva los articulos sea superior que todos los articulos de ceramica 
+            - SELECT * FROM PRODUCTOS WHERE PRECIO > (SELECT MAX(PRECIO) FROM PRODUCTOS WHERE SECCION = "CERAMICA")

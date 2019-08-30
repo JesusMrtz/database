@@ -1,0 +1,24 @@
+Consultas multitabla
+
+* Consultas de union externa:
+    - union 
+    - union all 
+    - except 
+    - intersect 
+    - minus 
+
+* Union interna 
+    - Inner join 
+    - Left join 
+    - Right join 
+
+
+* Para utilizar consultas con union las tablas deben tener el mismo número de campos y deben tener tipos de datos compatibles 
+
+    - SELECT * FROM PRODUCTOS WHERE SECCION = 'DEPORTES' UNION SELECT * FROM PRODUCTOSNUEVOS WHERE SECCION = 'DEPORTES DE RIESGO'
+
+    - SELECT * FROM PRODUCTOS WHERE PRECIO > 500 UNION SELECT * FROM PRODUCTOSNUEVOS WHERE SECCION = 'ALTA COSTURA'
+
+
+Union all 
+    - LA diferencia entre union y union all, en caso de que haya registros repetidos union all muestra todo y el union solo una vez 

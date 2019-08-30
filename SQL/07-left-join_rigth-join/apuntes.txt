@@ -1,0 +1,2 @@
+- Left trae todos los registros de la izquierda y derecha
+    select * from empleados a left join departamentos b on a.id = b.id_empleados where  departamentos.id_empleados is null

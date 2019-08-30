@@ -1,0 +1,27 @@
+* Consultas de calculo 
+    * Funciones frecuentes
+        - Now() - No devuelve la fecha actual
+        - Datediff() - Nos devuelve la diferencia entre dos fechas 
+        - Date_format() - Nos permite formatear la fecha 
+        - Concat() - Concatenar
+* Las consultas de calculo se realizan sobre registros individuales
+
+
+* Mostrar todos los productos incrementado el precio a un 21%
+    - SELECT NOMBREARTICULO, SECCIÓN, PRECIO, PRECIO*1.21 AS TOTAL_IVA FROM productos
+
+
+* Redondear el precio con el IVA a dos decimales
+    - SELECT NOMBREARTICULO, SECCIÓN, PRECIO, ROUND(PRECIO*1.21, 2) AS TOTAL_IVA FROM productos
+
+
+* Restale 3 pesos al precio de los productos
+    - SELECT NOMBREARTICULO, SECCIÓN, PRECIO, PRECIO-3 AS DESCUENTO FROM productos
+
+
+* Mostrar los dias de diferencia entre la fecha en turno y la fecha del dia de hoy
+    - SELECT NOMBREARTICULO, SECCIÓN, FECHA, NOW() AS DIA_DE_HOY, DATEDIFF(NOW(), FECHA) AS DIFERENCIA FROM productos
+
+
+* MOdificar el formato de un campo fecha
+ - SELECT NOMBREARTICULO, SECCIÓN, FECHA, DATE_FORMAT(NOW(),'%D-%M') AS DIA_DE_HOY, DATEDIFF(NOW(), FECHA) AS DIFERENCIA FROM productos

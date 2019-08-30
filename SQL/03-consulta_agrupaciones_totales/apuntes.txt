@@ -1,0 +1,30 @@
+* PAra una consulta de agrupacion se recomienda dos campos, uno de agrupación y una de total
+
+* Sumar los precios de todas las secciones
+    - SELECT SECCION, SUM(PRECIO) FROM productos ORDER BY SECCION;
+    - Resultado tabla con seccion y SUM(PRECIO)
+
+
+* No se puede ordenar por PRECIO ya que ORDER BY ordenar por lo obtenido de la consulta y no existe la columnas precio en la consulta 
+
+* Creando un alias
+    - SELECT SECCION, SUM(PRECIO) AS SUMA_ARTICULO FROM productos ORDER BY SUMA_ARTICULO;
+    - Resultado tabla con seccion y SUMA_ARTICULO
+
+
+* Media de la seccion de deportes y ceramica
+    * HAVING. Especifica las condiciones o criterios que deben cumplir los grupos (Reemplaza el WHERE en los grupos)
+        - SELECT SECCION, AVG(PRECIO) AS PROMEDIO FROM productos HAVING SECCION='CERÁMICA' OR SECCION='DEPORTES' ORDER BY PROMEDIO;
+
+
+* Conteo de cuantos clientes tengo por poblacion
+    * COUNT no cuenta registros en blanco
+        - SELECT POBLACIÓN, COUNT(ID) AS N_CLIENTES FROM clientes ORDER BY N_CLIENTES;
+
+
+* Saber el precio del los articuloas mas caros
+    - SELECT SECCION, MAX(PRECIO) AS MAX_PRECIO FROM productos HAVING SECCION = "CERAMICA";
+
+
+* Saber el precio del articulo más caro de la sección de ceramica
+    - SELECT SECCION, MAX(PRECIO) AS MAX_PRECIO FROM productos HAVING SECCION = "CERAMICA";
